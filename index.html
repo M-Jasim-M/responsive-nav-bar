@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+<div class="logo"> NIKE</div>
+
+<div class="link" id="link">
+<ul>
+<li>Home</li>
+<li>About us</li>
+<li>Contact us</li>
+<li>Services</li>
+</ul></div>
+
+<div class="logoe">
+    <span class="logoout">Logout</span>
+    <span class="none" id="toogle" onclick="tog()">|||</span>
+</div>
+
+
+
+
+    </div>
+
+    <!-- <div class="anim">This is Animation</div> -->
+    <script>
+
+var toogle = document.getElementById("toogle");
+
+function tog() {
+    // link.style.left = '-40px' 
+    // link.style.transform = 'translate(-120px, 0px)'
+    var link = document.getElementById("link");
+    link.style.animation = '6s'
+   link.classList.toggle("colo")
+}
+    </script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>
